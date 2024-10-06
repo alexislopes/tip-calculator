@@ -1,11 +1,11 @@
 <template>
   <div class="painel__entrada">
     <v-btn-toggle v-model="currency" style="display: flex; justify-content: center;" borderless mandatory>
-      <v-btn value="EUR"> EUR </v-btn>
-      <v-btn value="USD"> USD </v-btn>
+      <v-btn text="white" color="#940DFF" value="EUR"> EUR </v-btn>
+      <v-btn text="white" color="#940DFF" value="USD"> USD </v-btn>
     </v-btn-toggle>
 
-    <v-text-field hide-details type="number" :label="`Valor ${sign[currency]}`"
+    <v-text-field color="#940DFF" hide-details type="number" :label="`Valor ${sign[currency]}`"
       :placeholder="`Digite em ${sign[currency]}`" v-model.number="valor" outlined />
 
     <div>
