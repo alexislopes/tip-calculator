@@ -14,9 +14,9 @@
     <v-card class="mx-auto" style="width: 100%;" outlined>
       <v-list-item three-line>
         <v-list-item-content>
-          <v-list-item-subtitle>Gorgeta</v-list-item-subtitle>
+          <v-list-item-subtitle>Gorjeta</v-list-item-subtitle>
           <v-list-item-title class="text-h5 mb-1">
-            {{ currencyFormatted(gorgetaCalculada) }}
+            {{ currencyFormatted(gorjetaCalculada) }}
           </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
@@ -63,7 +63,7 @@ import { useTipCalculator } from '@/composables/useTipCalculator';
 import { computed, watch } from 'vue';
 const {
   currency,
-  gorgetaCalculada,
+  gorjetaCalculada,
   total,
   porPessoa,
   emReal,

@@ -4,19 +4,19 @@ import { computed, ref } from 'vue'
 const currency = ref('EUR')
 
 const valor = ref(0)
-const gorgeta = ref(10)
+const gorjeta = ref(10)
 const pessoas = ref(2)
 
 const quote = ref(0)
 
 export const useTipCalculator = () => {
 
-  const gorgetaCalculada = computed(() => {
-    return (gorgeta.value * valor.value) / 100
+  const gorjetaCalculada = computed(() => {
+    return (gorjeta.value * valor.value) / 100
   })
 
   const total = computed(() => {
-    return valor.value + gorgetaCalculada.value
+    return valor.value + gorjetaCalculada.value
   })
 
   const porPessoa = computed(() => {
@@ -32,12 +32,12 @@ export const useTipCalculator = () => {
 
   return {
     currency,
-    gorgetaCalculada,
+    gorjetaCalculada,
     total,
     porPessoa,
     emReal,
     valor,
-    gorgeta,
+    gorjeta,
     pessoas,
     quote
   }
