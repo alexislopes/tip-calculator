@@ -12,7 +12,7 @@
       <label>Gorjeta <v-chip>{{ gorjeta }}%</v-chip></label>
       <div class="slider__container">
         <span class="slider__container__hint">10</span>
-        <v-slider hint="Gorjeta" v-model="gorjeta" max="20" min="10"></v-slider>
+        <v-slider track-color="purple" color="#940DFF" hint="Gorjeta" v-model="gorjeta" max="20" min="10"></v-slider>
         <span class="slider__container__hint">20</span>
       </div>
     </div>
@@ -21,7 +21,7 @@
       <label>Pessoas <v-chip> {{ pessoas }} </v-chip></label>
       <div class="slider__container">
         <span class="slider__container__hint">2</span>
-        <v-slider hint="Pessoas" v-model="pessoas" max="16" min="2"></v-slider>
+        <v-slider track-color="purple" color="#940DFF" hint="Pessoas" v-model="pessoas" max="16" min="2"></v-slider>
         <span class="slider__container__hint">16</span>
       </div>
     </div>

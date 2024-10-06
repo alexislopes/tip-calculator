@@ -50,18 +50,18 @@
           <v-list-item-subtitle>Em R$</v-list-item-subtitle>
           <v-list-item-title class="text-h5 mb-1">
             {{ emReal }}
-            <v-chip color="orange"
-              style="position: absolute; top: 0; right: 0; transform: translate3d(15px, -15px, 0);">{{
-                currency
+            <v-chip color="#940DFF" trackColor="#940DFF"
+              style=" color: white;position: absolute; top: 0; right: 0; transform: translate3d(15px, -15px, 0);">{{
+              currency
               }} em {{ new
-                Date(lastSync).toLocaleDateString('pt-BR', {
-                  month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric'
-                }) }}: <strong> {{ new
+              Date(lastSync).toLocaleDateString('pt-BR', {
+              month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric'
+              }) }}: <strong> {{ new
                 Intl.NumberFormat('pt-BR',
-                  {
-                    style: 'currency', currency:
-                      'BRL'
-                  }).format(quote) }}</strong> </v-chip>
+                {
+                style: 'currency', currency:
+                'BRL'
+                }).format(quote) }}</strong> </v-chip>
           </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
